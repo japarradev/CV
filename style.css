@@ -1,0 +1,233 @@
+*
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html
+{
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    max-width: 100%;
+}
+
+body
+{
+    padding: 30px;
+}
+
+h1
+{
+    font-size: 3.5rem;
+}
+/* NavBar */
+
+.nav-bar .logo
+{
+    width: 80px;
+    border-radius: 10px;
+} 
+
+
+/* About me */
+.about-me .profile
+{
+    display: flex;
+    align-items: flex-end;
+    
+}
+.profile img
+{
+    height: 200px;
+    border-radius: 30px;
+}
+.skills
+{
+    display: grid;
+    grid-template-rows: 50px 50px ;
+    grid-template-columns: 70px 70px ;
+    grid-gap: 1px;
+}
+.skill-item
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: gray;
+    color: white;
+    margin: 0 2px;
+    height: 30px;
+    border-radius: 20px;
+    font-size: 1.4rem;
+
+}
+ .skill-item:nth-child(1)
+{
+    background-color: black;
+} 
+.skill-item:nth-child(2)
+{
+    background-color: #f7df1e;
+    color: black;
+} 
+.skill-item:nth-child(3)
+{
+    background-color: #ff5722;
+    color: black;
+} 
+.skill-item:nth-child(4)
+{
+    background-color: #2197f3;
+    color: black;
+} 
+
+.content-section p 
+{
+    font-size: 1.6rem;
+    margin-top: 10px;
+    text-align: justify;
+}
+.content-section span
+{
+    font-size: 1.4rem;
+}
+.social-icons {
+    display: flex;
+    justify-content: flex-start;
+    width: 300px;
+    
+  }
+  .social-icons a {
+    display: inline-block;
+    margin: 5px 5px 0px 0px;
+    transition: transform 0.3s ease-in-out;
+    
+  }
+  .social-icons a svg{
+     width: 32px;
+     fill :#9ca3af;
+  }
+ 
+  .social-icons svg:hover 
+  {
+    fill: #014BA0;
+    
+  }
+
+  @media (min-width:768px) 
+{
+    .nav-bar .logo
+    {
+        width: 100px;
+        
+    }
+    h1
+    {   
+        font-size: 4.5rem;
+    }
+    .content-section span
+    {
+        font-size: 1.8rem;
+    }
+    .about-me
+    {
+        display: flex;
+        flex-direction: row;
+        
+    }
+    .content-section
+    {
+        order: 1;
+    }
+    .profile
+    {
+        order: 2;
+        flex-direction: column;
+    }
+    .profile img
+    {
+        height: 300px;
+        order: 1;
+    }
+    .profile .skills
+    {
+        
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        width: 100%;
+        justify-content: space-around;
+        
+        ;
+    }
+    .skill-item
+    {
+        width: 100%;
+        margin: 10px;
+        font-size: 2rem;
+    }
+
+    .content-section p 
+    {
+        font-size: 2.3rem;
+       
+    }
+
+    .social-icons a svg
+    {
+        width: 40px;
+     }
+    
+}
+
+
+@media (min-width:1024px) 
+{
+   
+    h1
+    {   
+        font-size: 5rem;
+    }
+    .content-section span
+    {
+        font-size: 2rem;
+    }
+    
+    .profile img
+    {
+        height: 400px;
+        order: 1;
+    }
+    .profile .skills
+    {
+        
+        order: 2;
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+    }
+    .skill-item
+    {
+        width: 130px;
+        margin: 5px;
+    }
+
+    .content-section p 
+    {
+        font-size: 2.3rem;
+       
+    }
+
+    .social-icons a svg
+    {
+        width: 40px;
+     }
+    
+}

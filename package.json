@@ -1,0 +1,18 @@
+{
+  "name": "cv",
+  "version": "1.0.0",
+  "description": "CV Jaime Alberto Parra Acevedo ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "CV",
+    "Jaime",
+    "Alberto",
+    "Parrra",
+    "Acevedo"
+  ],
+  "author": "Jaime Alberto Parra Acevedo",
+  "license": "MIT"
+}
