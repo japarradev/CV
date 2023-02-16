@@ -8,8 +8,9 @@
 html
 {
     font-size: 62.5%;
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Montserrat', sans-serif;
+
+
     max-width: 100%;
 }
 
@@ -20,7 +21,7 @@ body
 
 h1
 {
-    font-size: 3.5rem;
+    font-size: 4rem;
 }
 h2
 {
@@ -60,8 +61,11 @@ h2
 }
 .profile img
 {
-    height: 200px;
+    height: 150px;
     border-radius: 30px;
+    position: absolute;
+    right: 30px;
+   
 }
 .skills
 {
@@ -69,6 +73,7 @@ h2
     grid-template-rows: 50px 50px ;
     grid-template-columns: 70px 70px ;
     grid-gap: 1px;
+    visibility: hidden;
 }
 .skill-item
 {
@@ -142,7 +147,7 @@ h2
     
     h1
     {   
-        font-size: 5rem;
+        font-size: 6rem;
     }
     .content-section span
     {
@@ -167,6 +172,7 @@ h2
     {
         height: 300px;
         order: 1;
+        position: static;
     }
     .profile .skills
     {
@@ -177,8 +183,7 @@ h2
         margin-top: 10px;
         width: 100%;
         justify-content: space-around;
-        
-        ;
+        visibility: visible;
     }
     .skill-item
     {
@@ -206,11 +211,11 @@ h2
    
     h1
     {   
-        font-size: 6rem;
+        font-size: 7rem;
     }
     .content-section span
     {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
     
     .profile img
