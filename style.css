@@ -1,12 +1,10 @@
-*
-{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-html
-{
+html {
     font-size: 62.5%;
     font-family: 'Montserrat', sans-serif;
 
@@ -14,69 +12,65 @@ html
     max-width: 100%;
 }
 
-body
-{
+body {
     padding: 30px;
 }
 
-h1
-{
+h1 {
     font-size: 4rem;
 }
-h2
-{
+
+h2 {
     font-size: 2.0rem;
     margin-top: 10px;
 
 }
+
 /* NavBar */
 
-.nav-bar
-{
+.nav-bar {
     display: flex;
     position: relative;
 }
 
-.nav-bar .logo
-{
+.nav-bar .logo {
     width: 100px;
     border-radius: 10px;
-    
-} 
 
-.nav-bar .social-icons
-{
+}
+
+.nav-bar .social-icons {
     width: 100px;
     border-radius: 10px;
     position: absolute;
     right: 30px;
-    
-} 
+
+}
+
 /* About me */
-.about-me .profile
-{
+.about-me .profile {
     display: flex;
     align-items: flex-end;
-    
+
 }
-.profile img
-{
+
+.profile img {
     height: 150px;
     border-radius: 30px;
     position: absolute;
     right: 30px;
-   
+
 }
-.skills
-{
+
+.skills {
     display: grid;
-    grid-template-rows: 50px 50px ;
-    grid-template-columns: 70px 70px ;
+    grid-template-rows: 50px 50px;
+    grid-template-columns: 70px 70px;
     grid-gap: 1px;
     visibility: hidden;
 }
-.skill-item
-{
+
+.skill-item {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -89,94 +83,93 @@ h2
     font-size: 1.4rem;
 
 }
- .skill-item:nth-child(1)
-{
+
+.skill-item:nth-child(1) {
     background-color: black;
-} 
-.skill-item:nth-child(2)
-{
+}
+
+.skill-item:nth-child(2) {
     background-color: #f7df1e;
     color: black;
-} 
-.skill-item:nth-child(3)
-{
+}
+
+.skill-item:nth-child(3) {
     background-color: #ff5722;
     color: black;
-} 
-.skill-item:nth-child(4)
-{
+}
+
+.skill-item:nth-child(4) {
     background-color: #2197f3;
     color: black;
-} 
+}
 
-.content-section p 
-{
+.content-section p {
     font-size: 1.6rem;
     margin-top: 10px;
     text-align: justify;
 }
-.content-section span
-{
+
+.content-section span {
     font-size: 1.4rem;
 }
+
 .social-icons {
     display: flex;
     justify-content: flex-start;
     width: 300px;
-    
-  }
-  .social-icons a {
+
+}
+
+.social-icons a {
     display: inline-block;
     margin: 5px 5px 0px 0px;
     transition: transform 0.3s ease-in-out;
-    
-  }
-  .social-icons a svg{
-     width: 32px;
-     fill :#9ca3af;
-  }
- 
-  .social-icons svg:hover 
-  {
-    fill: #014BA0;
-    
-  }
 
-  @media (min-width:768px) 
-{
-    
-    h1
-    {   
+}
+
+.social-icons a svg {
+    width: 32px;
+    fill: #9ca3af;
+}
+
+.social-icons svg:hover {
+    fill: #014BA0;
+
+}
+
+@media (min-width:768px) {
+
+    h1 {
         font-size: 6rem;
     }
-    .content-section span
-    {
+
+    .content-section span {
         font-size: 1.8rem;
     }
-    .about-me
-    {
+
+    .about-me {
         display: flex;
         flex-direction: row;
-        
+
     }
-    .content-section
-    {
+
+    .content-section {
         order: 1;
     }
-    .profile
-    {
+
+    .profile {
         order: 2;
         flex-direction: column;
     }
-    .profile img
-    {
+
+    .profile img {
         height: 300px;
         order: 1;
         position: static;
     }
-    .profile .skills
-    {
-        
+
+    .profile .skills {
+
         order: 2;
         display: flex;
         flex-direction: column;
@@ -185,70 +178,63 @@ h2
         justify-content: space-around;
         visibility: visible;
     }
-    .skill-item
-    {
+
+    .skill-item {
         width: 100%;
         margin: 10px;
         font-size: 2rem;
     }
 
-    .content-section p 
-    {
+    .content-section p {
         font-size: 2.3rem;
-       
+
     }
 
-    .social-icons a svg
-    {
+    .social-icons a svg {
         width: 40px;
-     }
-    
+    }
+
 }
 
 
-@media (min-width:1024px) 
-{
-   
-    h1
-    {   
+@media (min-width:1024px) {
+
+    h1 {
         font-size: 7rem;
     }
-    .content-section span
-    {
+
+    .content-section span {
         font-size: 2.5rem;
     }
-    
-    .profile img
-    {
+
+    .profile img {
         height: 400px;
         order: 1;
     }
-    .profile .skills
-    {
-        
+
+    .profile .skills {
+
         order: 2;
         display: flex;
         width: 100%;
         justify-content: space-around;
         flex-direction: row;
         flex-wrap: wrap;
-        
+
     }
-    .skill-item
-    {
+
+    .skill-item {
         width: 130px;
         margin: 5px;
     }
 
-    .content-section p 
-    {
+    .content-section p {
         font-size: 2.3rem;
-       
+
     }
 
-    .social-icons a svg
-    {
+    .social-icons a svg {
         width: 40px;
-     }
-    
+    }
+
 }
